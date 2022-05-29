@@ -1,18 +1,20 @@
-import { render } from 'react-dom';
-// import React from 'react';
-// import peintings from './paintings.json'
+import ReactDOM from 'react-dom';
+import React from 'react';
 import App from './App'
-  
-
-// function Peinting(props) {
-//   return (
-//     <App />, document.querySelector('#root')
-//   )
-// }
+import './index.css'
 
 
-render(<App />,
+
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+  ,
   document.querySelector('#root'))
+
+
+// render(<App />,
+//   document.querySelector('#root'))
 
 
 // ===============================
