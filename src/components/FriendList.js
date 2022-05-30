@@ -2,7 +2,8 @@ import PropTypes from 'prop-types'
 
 export default function FriendList({ friends }) {
     return (
-        <ul class="friend-list">
+        <div>
+            <ul class="friend-list">
             {friends.map(friend => (
                 <li class="item" key={friend.id}>
                     <span class="status"></span>
@@ -11,6 +12,7 @@ export default function FriendList({ friends }) {
                 </li>
             ))}
         </ul>
+        </div>
     )
 }
 
